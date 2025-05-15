@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
   ChevronLeft, ChevronRight, Smartphone, Lock, 
-  ShieldCheck, Key, Globe, DeviceTablet 
+  ShieldCheck, Key, Globe, Tablet 
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -120,7 +120,7 @@ const Features = () => {
                   <span className="text-sm">Android App</span>
                 </div>
                 <div className="bg-black/30 py-2 px-4 rounded-full flex items-center gap-2">
-                  <DeviceTablet className="h-4 w-4" />
+                  <Tablet className="h-4 w-4" />
                   <span className="text-sm">Responsive Web</span>
                 </div>
               </div>
