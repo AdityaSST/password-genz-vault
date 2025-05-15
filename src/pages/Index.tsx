@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,6 +7,7 @@ import { PasswordCard } from '@/components/password-card';
 import { PasswordForm } from '@/components/password-form';
 import { ReminderDialog } from '@/components/reminder-dialog';
 import { PasswordReminderBanner } from '@/components/password-reminder-banner';
+import { WelcomeBanner } from '@/components/welcome-banner';
 import { Password } from '@/types/password';
 import { useToast } from '@/hooks/use-toast';
 
@@ -87,6 +87,8 @@ const Index = () => {
           Add New Password
         </Button>
       </header>
+      
+      <WelcomeBanner />
       
       {showReminders && passwordsToChange.length > 0 && (
         <PasswordReminderBanner 
